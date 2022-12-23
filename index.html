@@ -28,7 +28,7 @@
         const texture = new THREE.TextureLoader().load('lips.png');
         faceMesh.material.map = texture;
         faceMesh.material.transparent = true;
-        faceMesh.material.needsUpdate = true;
+        faceMesh.material.needsUpdate = false;
         scene.add(faceMesh);
 
         const start = async () => {
